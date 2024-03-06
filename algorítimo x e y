@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Lê os números X e Y
+        System.out.print("Digite o valor de X: ");
+        int x = scanner.nextInt();
+        System.out.print("Digite o valor de Y: ");
+        int y = scanner.nextInt();
+
+        // Calcula o resto da divisão entre X e Y
+        int resto = x % y;
+
+        // Mostra o resultado
+        System.out.println("O resto da divisão entre " + x + " e " + y + " é " + resto);
+    }
+}
