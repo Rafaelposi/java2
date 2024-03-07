@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(Systen.in);
+        String nome;
+        System.out.print("informe seu nome");
+        nome=input.nextLine();
+        System.out.print("O nome informado foi:");
+        String endereço;
+        System.out.print("informe seu endereço");
+        enderoço=input.nextLine();
+        System.out.print("O endereço informado foi:");
+        String telefone;
+        System.out.print("informe seu telefone");
+        telefone=input.nextLine();
+        System.out.print("O telefone informado foi");
+        input.close();
+        
+        
+    }
+}
+
