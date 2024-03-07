@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class ConsumoMedio {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite a distância total percorrida (em km): ");
+        double distanciaTotal = scanner.nextDouble();
+
+        System.out.print("Digite a quantidade de combustível consumida (em litros): ");
+        double combustivelConsumido = scanner.nextDouble();
+
+        double consumoMedio = distanciaTotal / combustivelConsumido;
+
+        System.out.printf("O consumo médio de combustível é: %.2f km/l%n", consumoMedio);
+
+        scanner.close();
+    }
+}
