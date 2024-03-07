@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class CalculadoraValorTotal {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite a porcentagem do IPI a ser acrescido: ");
+        double porcentagemIPI = scanner.nextDouble();
+
+        System.out.println("Digite os dados da peça 1:");
+        System.out.print("Código da peça: ");
+        int codigo1 = scanner.nextInt();
+        System.out.print("Valor unitário da peça: ");
+        double valorUnitario1 = scanner.nextDouble();
+        System.out.print("Quantidade de peças: ");
+        int quantidade1 = scanner.nextInt();
+
+        System.out.println("Digite os dados da peça 2:");
+        System.out.print("Código da peça: ");
+        int codigo2 = scanner.nextInt();
+        System.out.print("Valor unitário da peça: ");
+        double valorUnitario2 = scanner.nextDouble();
+        System.out.print("Quantidade de peças: ");
+        int quantidade2 = scanner.nextInt();
+
+        double total1 = valorUnitario1 * quantidade1;
+        double total2 = valorUnitario2 * quantidade2;
+        double totalSemIPI = total1 + total2;
+        double totalComIPI = totalSemIPI + (totalSemIPI * (porcentagemIPI / 100));
+
+        System.out.println("\nValor total a ser pago (sem IPI): R$ " + totalSemIPI);
+        System.out.println("Valor total a ser pago (com IPI): R$ " + totalComIPI);
+
+        scanner.close();
+    }
+}
