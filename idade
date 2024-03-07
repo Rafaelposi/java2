@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class CalculadoraIdadeEmDias {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite a idade da pessoa em anos: ");
+        int idadeAnos = scanner.nextInt();
+
+        int diasVividos = idadeAnos * 365; // Assumindo que um ano tem 365 dias
+
+        System.out.println("A pessoa viveu aproximadamente " + diasVividos + " dias.");
+
+        scanner.close();
+    }
+}
+
+
