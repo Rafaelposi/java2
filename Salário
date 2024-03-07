@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class ReajusteSalario {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o salário do funcionário: ");
+        double salario = scanner.nextDouble();
+
+        double salarioReajustado = salario * 1.07; // Reajuste de 7%
+
+        System.out.printf("O novo salário do funcionário é: R$ %.2f%n", salarioReajustado);
+
+        scanner.close();
+    }
+}
