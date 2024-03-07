@@ -1,0 +1,16 @@
+- import java.util.Scanner;
+
+public class ConversorMetroParaCentimetro {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite a quantidade de metros: ");
+        double metros = scanner.nextDouble();
+
+        double centimetros = metros * 100; // 1 metro = 100 centímetros
+
+        System.out.println("A quantidade de centímetros é: " + centimetros);
+
+        scanner.close();
+    }
+}
