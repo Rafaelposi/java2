@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main
+
+{
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int hora;
+		System.out.print("informe  a hora");
+		 hora = input.nextLine();
+		System.out.print("a hora informada foi:" +hora);
+		Scanner input = new Scanner(System.in);
+		int minutos;
+		System.out.print("infome o minuto");
+ minuto  = input.nextLine();
+		System.out.print("o minuto informado foi" +minuto);
+		int minutopassado = hora * 60 + minutos;
+		System.out .print("sepasaram  " + minutos + "minutos"); 
+		input.close();
+		
+		
+		
+		
+	}
+}
