@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class CalculoEnergia {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Bem-vindo ao calculador de consumo de energia!");
+        System.out.print("Informe a potência do equipamento em Watts: ");
+        double potencia = scanner.nextDouble();
+
+        System.out.print("Informe a quantidade de horas que o equipamento fica ligado por dia: ");
+        double horasPorDia = scanner.nextDouble();
+
+        System.out.print("Informe o valor do KW/h (em reais): ");
+        double valorKWh = scanner.nextDouble();
+
+        double consumoKWh = (potencia * horasPorDia) / 1000;
+        double valorPago = consumoKWh * valorKWh;
+
+        System.out.println("\nO equipamento consumirá " + consumoKWh + " kWh por dia.");
+        System.out.println("O valor a ser pago será de R$" + valorPago + " por dia.");
+
+        scanner.close();
+    }
+}
