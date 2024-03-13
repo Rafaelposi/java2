@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class CalculoTempoDownload {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Bem-vindo ao calculador de tempo de download!");
+        System.out.print("Informe o tamanho do arquivo em MB: ");
+        double tamanhoArquivoMB = scanner.nextDouble();
+
+        System.out.print("Informe a velocidade do link de internet em Mbps: ");
+        double velocidadeMbps = scanner.nextDouble();
+
+        double tamanhoArquivoMb = tamanhoArquivoMB * 8;
+        double tempoSegundos = tamanhoArquivoMb / velocidadeMbps;
+        double tempoMinutos = tempoSegundos / 60;
+
+        System.out.println("\nO tempo estimado para download é de aproximadamente " + tempoMinutos + " minutos.");
+
+        scanner.close();
+    }
+}
