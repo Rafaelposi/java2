@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class CalculoRevestimento {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Bem-vindo à calculadora de revestimento!");
+        System.out.print("Informe a largura da área a ser revestida (em metros): ");
+        double largura = scanner.nextDouble();
+
+        System.out.print("Informe o comprimento da área a ser revestida (em metros): ");
+        double comprimento = scanner.nextDouble();
+
+        System.out.print("Informe a largura da cerâmica escolhida (em centímetros): ");
+        double lar
