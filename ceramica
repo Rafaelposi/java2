@@ -1,0 +1,8 @@
+System.out.print("Informe o valor do metro quadrado da cerâmica escolhida: ");
+double valorMetroQuadrado = scanner.nextDouble();
+
+double valorTotalSemAcabamento = qtdCeramica * valorMetroQuadrado;
+double valorTotalComAcabamento = qtdCeramicaComAcabamento * valorMetroQuadrado;
+
+System.out.println("\nValor total a ser pago (sem acabamento): R$" + valorTotalSemAcabamento);
+System.out.println("Valor total a ser pago (com acabamento): R$" + valorTotalComAcabamento);
