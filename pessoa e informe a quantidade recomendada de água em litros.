@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class CalculoAgua {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Bem-vindo ao calculador de quantidade recomendada de água!");
+        System.out.print("Informe o peso da pessoa em quilogramas: ");
+        double peso = scanner.nextDouble();
+
+        double quantidadeAguaLitros = peso * 0.035;
+
+        System.out.println("\nA quantidade recomendada de água por dia é de aproximadamente " + quantidadeAguaLitros + " litros.");
+
+        scanner.close();
+    }
+}
