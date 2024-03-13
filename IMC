@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class CalculoIMC {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Bem-vindo ao calculador de IMC!");
+        System.out.print("Informe o peso atual em quilogramas: ");
+        double peso = scanner.nextDouble();
+
+        System.out.print("Informe a altura em centímetros: ");
+        double altura = scanner.nextDouble();
+
+        double alturaMetros = altura / 100;
+        double imc = peso / (alturaMetros * alturaMetros);
+
+        double pesoIdeal = 22 * alturaMetros * alturaMetros;
+        double pesoIdealAjustado = 25 * alturaMetros * alturaMetros;
+
+        System.out.println("\nSeu IMC é: " + imc);
+        System.out.println("Seu peso ideal é: " + pesoIdeal + " kg");
+        System.out.println("Seu peso ideal ajustado é: " + pesoIdealAjustado + " kg");
+
+        scanner.close();
+    }
+}
