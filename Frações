@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class SomaFracao {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Bem-vindo ao calculador de soma de frações!");
+        System.out.print("Informe o numerador da primeira fração: ");
+        int numerador1 = scanner.nextInt();
+        System.out.print("Informe o denominador da primeira fração: ");
+        int denominador1 = scanner.nextInt();
+
+        System.out.print("Informe o numerador da segunda fração: ");
+        int numerador2 = scanner.nextInt();
+        System.out.print("Informe o denominador da segunda fração: ");
+        int denominador2 = scanner.nextInt();
+
+        int numeradorResultado = numerador1 * denominador2 + numerador2 * denominador1;
+        int denominadorResultado = denominador1 * denominador2;
+
+        System.out.println("\nO resultado da soma é: " + numeradorResultado + "/" + denominadorResultado);
+
+        scanner.close();
+    }
+}
