@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class RegraDeTres {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Digite o valor da primeira grandeza:");
+        double grandeza1 = scanner.nextDouble();
+
+        System.out.println("Digite o valor da segunda grandeza:");
+        double grandeza2 = scanner.nextDouble();
+
+        System.out.println("Digite o valor da terceira grandeza:");
+        double grandeza3 = scanner.nextDouble();
+
+        // Calcula a quarta grandeza
+        double quartaGrandeza = (grandeza2 * grandeza3) / grandeza1;
+
+        System.out.println("O valor da quarta grandeza é: " + quartaGrandeza);
+
+        scanner.close();
+    }
+}
