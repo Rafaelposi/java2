@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Combustivel {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Informe o preço do litro de gasolina:");
+        double precoGasolina = scanner.nextDouble();
+
+        System.out.println("Informe o preço do litro de etanol:");
+        double precoEtanol = scanner.nextDouble();
+
+        double limiteCustoEtanol = precoGasolina * 0.7;
+
+        if (precoEtanol <= limiteCustoEtanol) {
+            System.out.println("É mais vantajoso abastecer com etanol.");
+        } else {
+            System.out.println("É mais vantajoso abastecer com gasolina.");
+        }
+
+        scanner.close();
+    }
+}
